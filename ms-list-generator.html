@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+  </head>
+
+  <body>
+    <main>
+      <p>
+        Click the button below to generate a random list of 6 monsters from Monster Sanctuary.
+        <br/> 
+        Hit the checkbox if you want to allow monsters to be listed more than once.
+      </p>
+      <label>
+        <input type="checkbox" onchange="toggleDuplicates()"/>
+        Allow Duplicates
+      </label>
+      <button type="button" onclick="generateList()">Generate</button>
+      <ul id="ms-list">
+
+      </ul>
+    </main>
+  </body>
+
+  <script src="ms-list.js"></script>
+  <script src="shuffle.js"></script>
+  <script src="ms-list-generator.js"></script>
+
+</html>
